@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicion de Mangas</title>
+</head>
+<body>
+<div class="contenedor d-flex flex-column justify-content-center">
+    <!--Inicio del menu de la pagina -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark shadow-lg p-3 mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Lector </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+
+                <div class="navbar-text">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Mangas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="creacion-edicion.html">Añadir/Editar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Erik1935</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Fin del menu de la pagina-->
+    <div class="row">
+        <div class="col d-flex justify-content-center mb-4">
+            <h2>Edicion De Mangas</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center m-2">
+        <div class="col-xs-7 col-sm-5 mb-3">
+            <form id="nuevo">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Ingresa el nombre del manga</label>
+                    <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="enlace" class="form-label">Enlace Imagen</label>
+                    <input type="text" class="form-control" id="enlace">
+                </div>
+                <div class="mb-3">
+                    <label for="ultimoCapLeido" class="form-label">Ultimo Capitulo Leido</label>
+                    <input type="number" class="form-control" id="ultimoCapLeido">
+                </div>
+                <input type="button" id="btnNuevoManga" class="btn btn-primary" value="Añadir">
+            </form>
+        </div>
+        <div class="col-xs-7 col-sm-4 mb-5">
+            <form>
+                <div class="mb-3">
+                    <label for="floatingSelectGrid" class="form-label">Selecciona el nombre del manga a editar</label>
+                    <select class="form-select" id="floatingSelectGrid">
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="nombreActualizado" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreActualizado">
+                </div>
+                <div class="mb-3">
+                    <label for="enlaceActualizado" class="form-label">Enlace Imagen</label>
+                    <input type="text" class="form-control" id="enlaceActualizado">
+                </div>
+                <div class="mb-3">
+                    <label for="numeroCapituloActualizado" class="form-label">Ultimo Capitulo Leido</label>
+                    <input type="text" class="form-control" id="numeroCapituloActualizado">
+                </div>
+                <input type="button" class="btn btn-primary" id="btnActualizar" value="Actualizar">
+                <input type="button" class="btn btn-primary" id="btnBorrar" value="Borrar">
+            </form>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center mb-4">
+                <h2>Enlaces</h2>
+            </div>
+        </div>
+        <div class="col-xs-7 col-sm-4 mb-5">
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Selecciona el enlace a editar:</label>
+                    <select class="form-select" id="listaEnlaces">
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="enlace" class="form-label">Nuevo Enlace:</label>
+                    <input type="text" class="form-control" id="textoEnlace">
+                </div>
+                <input type="button" class="btn btn-primary" id="nuevoEnlace"  value="Insertar">
+            </form>
+        </div>
+        <div class="col-xs-7 col-sm-4 mb-5">
+            <form>
+
+                <div class="mb-3">
+                    <label for="enlaceEditado" class="form-label">Enlace a editar:</label>
+                    <input type="text" class="form-control" id="enlaceEditado">
+                </div>
+                <input type="button" class="btn btn-primary" id="actualizarEnlace" value="Actualizar">
+                <input type="button" class="btn btn-primary" id="borrarEnlace" value="Borrar">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/peticiones.js"></script>
+</body>
+</html>
