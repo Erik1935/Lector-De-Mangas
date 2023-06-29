@@ -1,5 +1,5 @@
 # Lector-De-Mangas
-En este proyecto lo que se realizo fue la creación de un lector de mangas:
+En este proyecto se realizo un lector de mangas, se implementaron las siguientes funciones:
 	
  	•	Insertar Mangas
 	•	Visualizar Mangas (Imagen, Nombre, Enlaces, Ultimo Capitulo leído)
