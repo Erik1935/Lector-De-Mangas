@@ -8,5 +8,5 @@ En este proyecto se realizo un lector de mangas, se implementaron las siguientes
 	•	Insertar la portada de un manga (En la base de datos solo se almacena la URL, se sugiere utilizar el sito: https://es.imgbb.com/)
 	•	Editar datos de un manga (Portada, enlace, nombre, ultimo capitulo leído)
 Tecnologías Utilizadas:
-Java 17, Spring Boot 2.7.4, MySQL, Bootstrap 5, HTML, Css, JavaScript
+Java 17, Spring Boot 2.7.4, Spring Data JPA, MySQL, Bootstrap 5, HTML, Css, JavaScript
 
